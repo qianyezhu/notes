@@ -1,0 +1,14 @@
+{
+  "name": "book",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "npm run build && cd dist && git init && git add -A && git commit -m 'notes' && git push -f https://github.com/qianyezhu/notes-vue-press.git master:gh-pages && cd ../"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
